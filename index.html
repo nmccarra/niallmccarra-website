@@ -4,96 +4,94 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
     <meta name="viewport" content="width=device-width, initial-scale=0.5" />
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+
 
     <style>
-
-      html, body, flex {
-         height: 100%;
-         background-color: #5bb4e5;
-         font-family: 'Cascadia Code', sans-serif;
-         font-size:calc(5px + 1.5vw);
-      }
-
-      flex {
-         display: flex;
-         align-items: center;
+   
+   
+      header {
          justify-content: center;
-         flex-direction: column;
-      }
-
-      inner {
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         flex-direction: row;
-         font-size:calc(1px + 1vw);
-         padding: 40px;
-      }
-
-      div {
-         margin: 30px;
-      }
-
-      divm {
-         margin: 30px;
-         border-radius: 15px 50px;
-         border-style: solid;
-         background-color: #f2e8d1; 
-         padding: 50px;
-      }
-
-      divs {
-         margin: 30px;
-         border-radius: 3px 9px;
-         border-style: solid;
-         padding: 10px;
-         background-color: #fff;
-         min-width: 100px;
          text-align: center;
       }
 
-      .divs:active {
-      background-color: #3e8e41;
-      box-shadow: 0 5px #666;
+      html, body, header {
+         font-family: 'Cascadia Code', sans-serif;
+         font-weight: 550;
+         padding: 40px;
+         font-size: 40px;
       }
 
-      img {
-         width: 40px;
-         margin-left: auto;
-         margin-right: auto;
+      links {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         flex-direction: row;
       }
 
-      a:hover {color: black}
-      a { color: #5f5f5f; text-decoration: none; min-width: 100px;}
+      linkdiv {
+         justify-content: center;
+         padding: 100px;
+      }
+
+      .description {
+         font-size: medium;
+         justify-content: center;
+         text-align: center;
+      }
+
+
+      .social-icon {
+         color: black;
+         transition: 0.2s;
+      }
+
+      .social-icon:hover {
+         color: #518585;
+      }
+
+      ion-icon {
+         font-size: 50px;
+      }
+
+      a {
+         transition: 0.2s;
+         color: black;
+         text-decoration: none;
+
+      }
+
+      a:hover {
+         color:#518585;
+      }
 
       </style>
-
-    <title>Niall McCarra - Software Engineer</title>
    </head> 
    <body>
-      <flex>
-         <divm>
-         <div>
-            <b>Niall McCarra</b> is a Software Engineer at <a href="https://pos.toasttab.com/ie/" target="_blank">Toast, Inc.</a> 
-         </div>
-         <inner>
-         <a href="https://github.com/nmccarra" target="_blank">
-            <divs>
-               GitHub
-            </divs>
-         </a>
-         <a href="https://www.linkedin.com/in/niall-mccarra-0765a8a6/" target="_blank">
-            <divs>
-               LinkedIn
-            </divs>
-         </a>
-         <a href="mailto:niallmccarra@gmail.com" target="_blank">
-            <divs>
-               Mail
-            </divs>
-         </a>
-         </inner>
-         </divm>
-      </flex>
+      <header>
+            Niall McCarra
+      </header>
+      <div class="description">
+         Software engineer at <a href="https://pos.toasttab.com/ie/">Toast, Inc.</a>
+      </div>
+      <links>
+         <linkdiv>
+            <a class="social-icon" href="https://github.com/nmccarra">
+               <ion-icon name="logo-github"></ion-icon>
+            </a>
+         </linkdiv>
+         <linkdiv>
+            <a class="social-icon" href="https://www.linkedin.com/in/niall-mccarra-0765a8a6/">
+               <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+         </linkdiv>
+         <linkdiv>
+            <a class="social-icon" href="mailto:niallmccarra@gmail.com">
+               <ion-icon name="mail-sharp"></ion-icon>
+            </a>
+         </linkdiv>
+      </links>
+         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
    </body>
 </html>
